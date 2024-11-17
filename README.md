@@ -1,20 +1,20 @@
-# 🚀 🔐 Secret Messages 🔐
+# 🌦️ Weather API
 
-This project provides a simple Node.js application that allows users to encrypt and decrypt text messages using the Advanced Encryption Standard (AES) algorithm. It offers a straightforward interface for securing sensitive information.
+This project provides a simple Node.js application that allows users to retrieve weather information for a specified location. It utilizes the OpenWeatherMap API to fetch current weather data. I chose to work on this project so as to learn how to integrate a 3rd party API in Node.js using axios.
 
 ---
 
 ## ✨ Features
 
-- 🔒 **Text Encryption**: Encrypt plain text messages to secure sensitive information.
-- 🔓 **Text Decryption**: Decrypt previously encrypted messages to retrieve the original text.
+- 🌍 **Location-Based Weather Retrieval**: Fetch current weather data for any specified city.
+- 📡 **API Integration**: Integrates with the OpenWeatherMap API to provide accurate and up-to-date weather information.
 
 ---
 
 ## 📂 Project Structure
 
 ```plaintext
-secret_messages/
+weather_api/
 ├── node_modules/
 ├── .env
 ├── .gitignore
@@ -33,13 +33,13 @@ Follow these steps to set up and run the project locally:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Mosope20/secret_messages.git
+git clone https://github.com/Mosope20/weather_api.git
 ```
 
 ### 2️⃣ Navigate to the Project Directory
 
 ```bash
-cd secret_messages
+cd weather_api
 ```
 
 ### 3️⃣ Install Dependencies
@@ -53,28 +53,28 @@ npm install
 
 Create a .env file in the root directory to store sensitive information like JWT secret keys. For example:
 ```bash
-SECRET_KEY=your_secret_key_here
+API_KEY=your_openweathermap_api_key
 ```
 
 ### 5️⃣ Run the Application
 start the server with:
 ```bash
-npm start
+node app.js
 ```
 ### 🎉 The application should now be running, and you can use it to encrypt and decrypt messages.
 
 ---
 
 ## 📡 API Endpoints
-- GET /encrypt: Input the plain text you wish to encrypt. The application will return the encrypted message.
-- GET /decrypt: Input the encrypted message. The application will return the original plain text.
+- GET /city: Input the name of the city for which you want to retrieve weather information.
 
 ---
 
 ## 📦 Dependencies
 - express: Web framework for Node.js.
-- crypto: Node.js built-in module for cryptographic functions.
+- axios: Promise-based HTTP client for making API requests.
 - dotenv: Loads environment variables from a .env file.
+
 
 ---
 

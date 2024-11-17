@@ -1,6 +1,7 @@
-# 🌦️ Weather API
+# 🌦️ Weather API ⛈️
 
 This project provides a simple Node.js application that allows users to retrieve weather information for a specified location. It utilizes the OpenWeatherMap API to fetch current weather data. I chose to work on this project so as to learn how to integrate a 3rd party API in Node.js using axios.
+I plan on improving this project to automatically get user location for better user experience.
 
 ---
 
@@ -61,12 +62,13 @@ start the server with:
 ```bash
 node app.js
 ```
-### 🎉 The application should now be running, and you can use it to encrypt and decrypt messages.
+### 🌤️🌤️The application should now be running, and you can use it to fetch weather information for specified locations.
 
 ---
 
 ## 📡 API Endpoints
 - GET /city: Input the name of the city for which you want to retrieve weather information.
+- Kindly visit [openweathermap](https://openweathermap.org/current) to access the full data retrived from their API. Feel free to edit the data you send out to your endpoint.
 
 ---
 
